@@ -2,7 +2,7 @@
 
 -----------------
 
-### **Aula 2**
+### **Aula 2 - Algoritmos Lineares**
 
 * Diferença entre Eficácia e Eficiência:
 
@@ -29,3 +29,36 @@
         pcd = bool(input(‘Pessoa com deficiência: ‘))  
 
 -----------------
+
+### **Aula 3 - Estruturas Condicionais**
+
+* A estrutura condicional simples if executa um bloco de código se uma condição for verdadeira. Se a condição for falsa, a estrutura é finalizada sem executar os comandos.
+
+* A estrutura condicional composta if...else executa um bloco de código se uma condição for verdadeira. Se a
+condição for falsa, outro bloco de código é executado e a estrutura é finalizada.
+
+* A estrutura condicional composta if...elif...else é utilizada quando temos mais de uma condição no mesmo
+bloco de estrutura condicional.
+
+* Formatação numérica em Python:
+
+        numero = 22345.54759
+  
+        # Exibe a variável número SEM FORMATAÇÃO:
+        print('Número sem formatação: ', numero)
+  
+        # Exibe a variável número com separadores NO FORMATO AMERICANO:
+        print(f'Número no formato americano: {numero:,}')
+  
+        # Exibe a variável número com separadores NO FORMATO AMERICANO com 2 casas decimais:
+        print(f'Número no formato americano com 2 casas decimais: {numero:,.2f}')
+  
+        # Exibe a variável número com separadores NO FORMATO BRASILEIRO com 2 casas decimais:
+        numero_em_texto = f"{numero:_.2f}"
+        numero_em_texto = numero_em_texto.replace('.',',').replace('_','.')
+        print('Número no formato brasileiro com 2 casas decimais:',numero_em_texto)
+        print('Número no formato moeda brasileiro com 2 casas decimais: R$',numero_em_texto)
+
+* Anotações:
+
+Programa interpretado - Google Colab, Jupyter Notebook / Programa compilado - transforma o programa em código binário para ser gerado pela máquina.
