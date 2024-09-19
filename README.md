@@ -62,3 +62,27 @@ bloco de estrutura condicional.
 * Anotações:
 
 Programa interpretado - Google Colab, Jupyter Notebook / Programa compilado - transforma o programa em código binário para ser gerado pela máquina.
+
+-----------------
+
+### **Aula 3 - Estruturas Condicionais**
+
+* Estruturas condicionais servem para executar um conjunto de instruções várias vezes seguidas;
+
+* Também conhecida como loop (laços).
+
+* Um loop é executa repetidamente um conjunto de instruções enquanto determinada condição estiver sendo satisfeita.
+
+* As principais estruturas de repetição no Python são o for e o while:
+
+* WHILE: executa conjunto de instruções enquanto uma condição seja verdadeira. A condição de repetição deve ser definida logo no início do loop.
+
+        while <condição>:
+            <executar_instruções>
+        else:
+            <executar_outras_instruções>
+
+* FOR: funciona em um conjunto de itens fixos, como faixa de dados (range()) ou tipos de dados iteráveis como listas.
+
+        for <item> in <conjunto_de_itens>:
+         <bloco_de_código>
