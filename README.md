@@ -65,7 +65,7 @@ Programa interpretado - Google Colab, Jupyter Notebook / Programa compilado - tr
 
 -----------------
 
-### **Aula 3 - Estruturas Condicionais**
+### **Aula 4 - Estruturas Condicionais**
 
 * Estruturas condicionais servem para executar um conjunto de instruções várias vezes seguidas;
 
@@ -86,3 +86,88 @@ Programa interpretado - Google Colab, Jupyter Notebook / Programa compilado - tr
 
         for <item> in <conjunto_de_itens>:
          <bloco_de_código>
+  
+-----------------
+
+  ### **Aula 5 - Listas em Python**
+
+* Uma lista em Python é uma coleção ordenada de valores. As listas contém valores separados por vírgula e dentro de colchetes []. Listas são utilizadas 
+para armazenar diversos itens em uma única variável. Listas são objetos usados com frequência em análise de dados. Veja o exemplo de uma lista:
+
+        Exemplo de lista: 
+        estados_sudeste = ['ES', 'MG', 'RJ', 'SP']
+        print(estados_sudeste)
+        print(type(estados_sudeste))
+        
+        Saída: 
+        ['ES', 'MG', 'RJ', 'SP']
+        <class 'list'>
+
+-------
+
+* Listas - Inserindo itens em lista: 
+
+list.append --> Adiciona um item ao fim de uma lista
+
+list.insert --> Insere um item em uma posição index da lista
+
+-------
+
+* Listas – Removendo itens em uma lista
+
+list.clear -> Apaga toda a lista
+
+list.pop() --> remover um valor da lista definindo o ÍNDICE desejado
+
+list.remove() --> remover um valor da lista definindo o VALOR da lista
+
+método del --> mesmo resultado do pop
+
+-------
+
+* Listas – Outras operações com listas
+
+list.index() --> para imprimir o índice quando não sabemos sua posição
+
+list.count() --> conta a quantidade de vezes que um elemento/ valor aparece na lista
+
+list.sort() --> (útil para ordenação de dados filtrados da web) - não funciona para listas contendo vários tipos de dados
+
+list.reverse() --> reverte a ordem dos elementos de uma lista - não funciona para listas contendo vários tipos de dados
+
+list.copy() --> Retorna uma lista com a cópia dos elementos da lista de origem -> ÚTIL PARA TESTES
+
+-------
+
+* Operadores min(), max(), sum() e len()
+
+Em Python, as funções min(), max(), sum() e len() são comumente utilizadas com sequências de dados. As sequências mais comuns são:
+
+Listas: Coleções ordenadas de itens, mutáveis e heterogêneas.
+Tuplas: Coleções ordenadas de itens, imutáveis e heterogêneas.
+Strings: Sequências de caracteres.
+Cada função tem uma finalidade específica:
+
+min(): Retorna o menor elemento de uma sequência.
+max(): Retorna o maior elemento de uma sequência.
+sum(): Calcula a soma de todos os elementos numéricos de uma sequência.
+len(): Retorna o número de elementos de uma sequência.
+
+--------
+
+* Listas – Função range() --> Por padrão, os valores retornados na função range() são sequenciais e acrescidos de 1. Isso significa que, se utilizarmos o comando range(10), os valores retornados serão: '0, 1, 2, 3, 4, 5, 6, 7, 8 e 9'. Portanto, o valor inicial é zero e os números seguintes serão a somatória do valor atual mais 1.
+
+--------
+
+* Listas – List Comprehensions (Compreensão de Listas) --> List Comprehension é uma forma concisa de criar e manipular listas
+
+				[expr for item in lista]
+
+* Listas – List Comprehensions com if --> expressões condicionais para criar listas ou modificar listas existentes.
+
+				[expr for item in lista if condição]
+
+* Listas – List Comprehensions com if e else:
+  
+                       [resultado_if if expr else resultado_else for item in lista]
+ 
