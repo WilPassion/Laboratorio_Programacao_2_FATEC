@@ -170,4 +170,94 @@ len(): Retorna o número de elementos de uma sequência.
 * Listas – List Comprehensions com if e else:
   
                        [resultado_if if expr else resultado_else for item in lista]
+
+ -------
+
+* Faixa de listas no Python (slicing ou list slice)
+
+Sintaxe: (considere l uma lista qualquer)
+1. l[inicio:parada]           # fatia a lista começando no index <inicio> até <parada-1>
+2. l[inicio:]                 # fatia a lista começando no index <inicio> até o final da lista
+3. l[:parada]                 # fatia a lista começando no index 0 até <parada-1>
+4. l[:]                       # Considera toda a lista
+5. l[inicio:parada:passo]     # fatia a lista começando no index <inicio> avançando em <passo>
+                                # e não ultrapassando <parada>
+6. l[-1]                      # último item da lista
+7. l[-2:]                     # últimos dois itens da lista
+8. l[:-2]                     # toda a lista, exceto os dois últimos itens
+9. l[-inicio:-parada]         # fatia a lista começando no index <-inicio> até <-parada-1>
+
+					# Exemplos
+					lista = [0,1,2,3,4,5,6,7,8,9]
+					print(lista[0:4])     # 1. saída [0, 1, 2, 3]
+					print(lista[2:])      # 2. saída [2, 3, 4, 5, 6, 7, 8, 9]
+					print(lista[:6])      # 3. saída [0, 1, 2, 3, 4, 5]
+					print(lista[:])       # 4. [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+					print(lista[0:10:2])  # 5. [0, 2, 4, 6, 8]
+					print(lista[-1])      # 6. saída 9
+					print(lista[-2:])     # 7. saída [8, 9]
+					print(lista[:-2])     # 8. saída [0, 1, 2, 3, 4, 5, 6, 7]
+					print(lista[-5:-1])   # 9. saída [5, 6, 7, 8]
+
+ -------
  
+### **Aula 6 - Tuplas**
+
+* Tuplas são uma sequência de objetos imutáveis, em outras palavras, uma vez criadas, tuplas não podem ser modificadas, normalmente são usadas para guardar dados protegidos.
+
+* As tuplas são escritas entre parênteses ().
+  
+* Uma tupla em Python é semelhante a uma lista. A diferença entre os dois é que não podemos alterar os elementos de
+uma tupla (IMULTÁVEL) depois de atribuída, enquanto que, podemos alterar os elementos de uma lista (MULTÁVEL)
+
+* O acesso aos itens de uma tupla é idêntico ao de uma lista:
+
+					linguagens = ("Python","Ruby","Javascript","Perl","Haskell")
+					print(linguagens[0:2]) # ('Python', 'Ruby')
+					print(linguagens[-1]) # Haskell
+					print(linguagens[:-2]) # ('Python', 'Ruby', 'Javascript')
+
+* As tuplas são úteis para representar o que outras linguagens costumam chamar de registros, algumas informações relacionadas que pertencem entre si, como o registro de um estudante. Uma tupla nos permite “agrupar” informações relacionadas e usá-las em uma única estrutura:
+
+					estudante = ('Miguel', 29, 1990, 'Brasil')
+
+* Agora podemos utilizar um for para imprimir todos os elementos da tupla estudante:
+					
+					for e in estudante:   # Percorre os valores da tupla estudante
+					   print(e)           # Imprime os valores
+
+* Também podemos facilmente converter esta tupla em uma lista usando a técnica list
+comprehension:
+
+					print([e for e in estudante]) # ['Miguel', 29, 1990, 'Brasil']
+
+### **Aula 6 - Dicionários**
+
+* Dicionários são uma coleção ordenada de pares de {chave : valor}, são normalmente usados quando temos uma grande quantidade de dados.
+  
+* Dicionários são otimizados para buscarmos dados e para isso, precisamos saber sua chave.
+  
+* Dicionários são definidos entre chaves {} onde cada item é um par na forma de {chave : valor}, separados por vírgulas sendo a chave e o valor podendo ser de qualquer tipo.
+  
+**Chaves:**
+
+* Devem ser únicas;
+
+* Tipos int, float, string, tuple, bool, é recomendável não utilizar o tipo float como chave;
+
+* Nenhuma ordem para chaves ou valores.
+
+**Valores:**
+
+* Qualquer tipo;
+  
+* Pode ser duplicado;
+  
+* Valores de dicionários podem ser listas, até mesmo outros dicionários
+
+					elemento = {
+					    'nome': 'Ouro',
+					    'símbolo': 'Au',  # Corrigido o fechamento das aspas
+					    'número atômico': 79
+					}
+  
