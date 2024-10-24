@@ -65,7 +65,7 @@ Programa interpretado - Google Colab, Jupyter Notebook / Programa compilado - tr
 
 -----------------
 
-### **Aula 4 - Estruturas Condicionais**
+### **Aula 4 - Estruturas de Repetição**
 
 * Estruturas condicionais servem para executar um conjunto de instruções várias vezes seguidas;
 
