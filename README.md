@@ -201,7 +201,7 @@ Sintaxe: (considere l uma lista qualquer)
 
  -------
  
-### **Aula 6 - Tuplas**
+### **Aula 7 - Tuplas**
 
 * Tuplas são uma sequência de objetos imutáveis, em outras palavras, uma vez criadas, tuplas não podem ser modificadas, normalmente são usadas para guardar dados protegidos.
 
@@ -231,7 +231,7 @@ comprehension:
 
 					print([e for e in estudante]) # ['Miguel', 29, 1990, 'Brasil']
 
-### **Aula 6 - Dicionários**
+### **Aula 7 - Dicionários**
 
 * Dicionários são uma coleção ordenada de pares de {chave : valor}, são normalmente usados quando temos uma grande quantidade de dados.
   
@@ -260,4 +260,32 @@ comprehension:
 					    'símbolo': 'Au',  # Corrigido o fechamento das aspas
 					    'número atômico': 79
 					}
-  
+--------
+
+### **Aula 8 - Funções**
+
+* Em programação, uma função definida pelo usuário (user-defined function (UDF) é um bloco de
+código que executa uma determinada operação, recebendo dados de entrada e retornando valores
+como saída.
+
+* As funções são entidades separadas do algoritmo principal e permitem dividir e classificar o
+código em partes mais simples. Isso facilita a depuração e programação, além de permitir a
+reutilização do código.
+
+**Estrutura de uma função**
+
+* A estrutura básica de uma função começa com a palavra-chave def, seguida pelo nome da função e,
+opcionalmente, pelos parâmetros. Você pode criar funções que executam **ações sem retorno ou
+com o retorno** de algum resultado.
+
+A estrutura básica de uma função é a seguinte:
+
+			* def: palavra-chave que indica a definição de uma função;
+			
+			* nome_da_funcao: nome descritivo que indica o que a função faz;
+			
+			* parâmetros: valores que a função recebe para processar (opcional).
+			
+			* return: palavra-chave que indica o valor que a função devolve ao programa principal após sua
+			
+			* execução (opcional).
