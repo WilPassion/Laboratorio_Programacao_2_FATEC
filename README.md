@@ -274,11 +274,13 @@ reutilização do código.
 
 **Estrutura de uma função**
 
+* Funções / Rotinas / Funcionalidades que podem acontecer uma ou várias vezes.
+  
 * A estrutura básica de uma função começa com a palavra-chave def, seguida pelo nome da função e,
 opcionalmente, pelos parâmetros. Você pode criar funções que executam **ações sem retorno ou
 com o retorno** de algum resultado.
 
-A estrutura básica de uma função é a seguinte:
+* A estrutura básica de uma função é a seguinte:
 
 			* def: palavra-chave que indica a definição de uma função;
 			
@@ -289,3 +291,37 @@ A estrutura básica de uma função é a seguinte:
 			* return: palavra-chave que indica o valor que a função devolve ao programa principal após sua
 			
 			* execução (opcional).
+
+* Variável Global x Local:
+
+Variável local: Uma variável definida dentro de uma função. Uma variável local só pode ser usada
+dentro da sua função.
+
+Variável global: Variável definida fora de uma função. As variáveis globais podem ser acessadas
+pelo programa principal e por qualquer função.
+
+			y = 100 # ---> GLOBAL
+			
+			def multiplicacao(x):
+			  z = x * y   # ---> LOCAL 
+			  return z
+			
+			x = int(input('Entre com x: '))
+			print('O valor da multiplicação e: ', multiplicacao(x))
+
+* Funções com **parâmetros**:
+  
+			def titulo(msg):
+			    print('-' * 30)
+			    print(msg)
+			    print('-' * 30)
+			    
+			    
+			# Programa Principal
+			titulo('    CURSO EM VÍDEO  ')
+			titulo('    PYTHON IS REALLY GOOD xD  ')
+			titulo('    UHUUU  ')
+
+  
+* O **\empacotador de parâmetros** em Python permite que uma função receba um número variável de argumentos, usando *args para empacotar múltiplos argumentos posicionais em uma tupla e **kwargs para empacotar múltiplos argumentos nomeados em um dicionário. Isso é útil quando você não sabe antecipadamente quantos argumentos serão passados, permitindo mais flexibilidade na chamada da função.
+  
