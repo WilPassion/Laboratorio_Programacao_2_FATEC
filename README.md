@@ -320,8 +320,55 @@ pelo programa principal e por qualquer função.
 			# Programa Principal
 			titulo('    CURSO EM VÍDEO  ')
 			titulo('    PYTHON IS REALLY GOOD xD  ')
-			titulo('    UHUUU  ')
+			titulo('    UHUUU  ')  
 
   
-* O **\empacotador de parâmetros** em Python permite que uma função receba um número variável de argumentos, usando *args para empacotar múltiplos argumentos posicionais em uma tupla e **kwargs para empacotar múltiplos argumentos nomeados em um dicionário. Isso é útil quando você não sabe antecipadamente quantos argumentos serão passados, permitindo mais flexibilidade na chamada da função.
+* O **empacotador de parâmetros** em Python permite que uma função receba um número variável de argumentos, usando *args para empacotar múltiplos argumentos posicionais em uma tupla e **kwargs para empacotar múltiplos argumentos nomeados em um dicionário. Isso é útil quando você não sabe antecipadamente quantos argumentos serão passados, permitindo mais flexibilidade na chamada da função.  
+
+
+### **Aula 9 - Funções Lambda e Funções Recursivas**
+  
+* As expressões lambda, ou funções anônimas, são uma ferramenta poderosa que permite aos desenvolvedores escrever código mais limpo
+e eficiente. Devido à sua natureza concisa, as expressões lambda são ideais para operações simples que requerem uma função por um curto
+período de uso.  
+
+* As expressões lambda são funções pequenas e sem nome, definidas pela palavra-chave lambda. A estrutura de uma expressão lambda é
+simples: Começa com a palavra-chave lambda, seguida por parâmetros, dois pontos e, por fim, uma expressão que a função retorna.  
+
+			* Sintaxe: 			
+			variável = lambda argumentos: expressão
+
+			* Exemplos básicos:
+			
+			* Incrementar um número:
+			incrementar = lambda x: x + 1
+			
+			* Calcular um imposto:
+			Calcular_imposto = lambda x: x*0.275
+			
+			* Multiplicar dois números
+			multiplicar = lambda x, y: x * y
+
+**Utilizando Funções recursivas**
+
+* Em termos simples, uma função recursiva é aquela que chama a si mesma durante sua execução.
+
+* Este conceito baseia-se na ideia de dividir um problema em subproblemas menores e resolver cada subproblema
+recursivamente.
+
+* As funções recursivas consistem em dois elementos principais: o caso **base** e o caso **recursivo**.
+  
+* O caso base é a fundação da recursividade é a condição que interrompe a recursividade, evitando que a função continue
+chamando a si mesma indefinidamente. Sem um caso base adequado, a função entraria em um loop infinito. Consideremos
+o exemplo que envolve o cálculo do fatorial de um número:
+
+			def fatorial(n):
+			    if n <= 1:  # Caso base
+			        return 1
+			    else:
+			        return n * fatorial(n - 1)  # Chamada recursiva
+
+
+* O caso recursivo envolve a multiplicação de n pelo resultado da chamada recursiva de fatorial(n - 1), reduzindo
+gradualmente o problema.
   
